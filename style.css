@@ -38,7 +38,7 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 6em;
+    font-size: 5em;
     font-weight: 900;
     color: #fff;
     font-style: italic;
@@ -47,11 +47,11 @@ body {
 }
 
 .container .box::after {
-    content: 'GUAM';
+    content: 'CENTRO';
     position: absolute;
     bottom: 20px;
     right: 20px;
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 900;
     color: #fff;
     font-style: italic;
@@ -128,7 +128,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%; 
-    max-width: 300px;
+    max-width: 150px;
     z-index: 11;
     transition: 0.5s;
     transform-style: preserve-3d;
