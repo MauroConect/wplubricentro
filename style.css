@@ -1,0 +1,181 @@
+/*
+Theme Name: Lubricentro
+Theme URI: 
+Author: Mauro Toranzo
+Author URI: 
+Description: tema desarrollado para la pagina lubricentro
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: res
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "css/main.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;*/
+    background-color: #131313;
+}
+
+.container1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+
+.container .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.container .box::before {
+    content: 'LUBRI';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box::after {
+    content: 'CENTRO';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box:hover::before,
+.container .box:hover::after {
+    opacity: 0.04;
+}
+
+.container .box .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .name
+{
+    top: 40px;
+    opacity: 1;
+}
+
+.container .box .buy
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform:translate3d(-50%,0,75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .buy
+{
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container .box .circle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+.container .box .product
+{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    max-width: 150px;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px) rotate(15deg);
+}
+
+.container .box:hover .product
+{
+    transform: translate3d(-50%,-50%,100px) rotate(15deg);
+}
+
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy
+{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.31465517241379315) 0%, rgba(9,121,27,0.4892241379310345) 0%, rgba(0,255,24,1) 100%);
+}
+
+.container .box:nth-child(2) .circle,
+.container .box:nth-child(2) .buy
+{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.31465517241379315) 0%, rgba(9,121,27,0.4892241379310345) 0%, rgba(0,255,24,1) 100%);
+
+}
+
+.container .box:nth-child(3) .circle,
+.container .box:nth-child(3) .buy
+{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.31465517241379315) 0%, rgba(9,121,27,0.4892241379310345) 0%, rgba(0,255,24,1) 100%);
+}
+
+
+
