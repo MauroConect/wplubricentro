@@ -6,8 +6,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Lubricentro</title>
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="wp-content/themes/lubricentro/style.css">
+    <?php wp_head();?>
 </head>
 
 <body>
@@ -36,8 +35,8 @@
             </div>
             <div class="logo-container">
                 <a href="#">
-                    <h1 class="d-none">Slan Hotel</h1>
-                    <img src="wp-content/themes/lubricentro/img/lubri.png" alt="Lubricentro">
+                    <h1 class="d-none">LubriCentro</h1>
+                    <img src="<?php echo IMAGES ?>/lubri.png" alt="Lubricentro">
                 </a>
             </div>
             <nav class="main-menu-container">
@@ -75,7 +74,7 @@
     </header>
 
     <section class="main main--home">
-        <section class="main-banner parallax-window" data-parallax="scroll" data-image-src="img/homebanner.jfif">
+        <section class="main-banner parallax-window" data-parallax="scroll" data-image-src="<?php echo IMAGES ?>/homebanner.jfif">
             <div class="main-banner-inner">
                 <div class="container">
                     <div class="main-banner-content text-center">
@@ -278,6 +277,8 @@
                     speed: 400
                 });
             </script>
+           
+           
 </body>
 
 </html>
