@@ -11,7 +11,7 @@ define ('THEMEROOT','wp-content/themes/lubricentro/');
 
 define ('IMAGES', 'wp-content/themes/lubricentro/img/');
 
- /*Definiendo caracteristicas del thema */
+ /*Definiendo caracteristicas del thema y permisos */
  if ( ! function_exists('res_custom_theme_features') ) {
 
     // Register Theme Features
@@ -66,7 +66,7 @@ define ('IMAGES', 'wp-content/themes/lubricentro/img/');
         add_image_size('product_size_image, 825,533,true');
     }
     add_action( 'after_setup_theme', 'res_custom_theme_features' );
-
+    //Definiendo compatibilidad con wo
     add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
    add_theme_support( 'woocommerce' );
@@ -82,4 +82,4 @@ function woocommerce_support() {
 
       /*Registrando menus*/
 
-      require_once('includes/menus.php');
+    require_once('includes/menus.php');
