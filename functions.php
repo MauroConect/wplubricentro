@@ -67,8 +67,9 @@ define ('IMAGES', 'wp-content/themes/lubricentro/img/');
     }
     add_action( 'after_setup_theme', 'res_custom_theme_features' );
     //Definiendo compatibilidad con wo
+   
     add_action( 'after_setup_theme', 'woocommerce_support' );
-function woocommerce_support() {
+    function woocommerce_support() {
    add_theme_support( 'woocommerce' );
 }
 
@@ -83,3 +84,8 @@ function woocommerce_support() {
       /*Registrando menus*/
 
     require_once('includes/menus.php');
+
+
+     //Registrando Zonas de Widgets
+
+     include_once ('includes/sidebars.php');
