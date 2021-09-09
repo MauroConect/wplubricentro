@@ -19,7 +19,7 @@ add_action ('wp_enqueue_scripts','res_theme_style');
 
 function res_theme_scripts(){
 
-    //registar scrips
+    //registar scripts
     wp_register_script('parallax','THEMEROOT ./js/parallax.min.js' ,array('jquery'),'1.5.0',true);
     wp_register_script('res-scripts','THEMEROOT ./js/main.js' ,array('jquery','parallax'),'1.0',true);
     //cargar
