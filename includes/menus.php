@@ -9,5 +9,4 @@ register_nav_menus(array (
 
 ));
 }
-
 add_action('init','res_menus');

@@ -1,72 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-    <div class="header-inner">
-        <div class="top-bar">
-            <div class="container">
-                <ul class="social-top-bar">
-                    <li>
-                        <a href="#" class="text-black">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="logo-container">
-            <a href="#">
-                <h1 class="d-none">Slan Hotel</h1>
-                <img src="img/logoslanhotel.jpg" alt="Slan Hotel">
-            </a>
-        </div>
-        <nav class="main-menu-container">
-            <div class="container">
-                <ul id="mainMenu" class="main-menu">
-                    <li>
-                        <a href="#">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="#">SOBRE NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a href="#">HABITACIONES</a>
-                    </li>
-                    <li>
-                        <a href="#">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="#">BLOG</a>
-                    </li>
-                    <li>
-                        <a href="#">RESERVAR</a>
-                    </li>
-                </ul>
-                <a href="#" class="mobile-menu-button" id="mobileMenuButton">
-                    MENÚ PRINCIPAL <i class="fas fa-bars"></i>
-                </a>
-            </div>
-        </nav>
-    </div>
-</header>
+<?php
+
+get_header();
+
+?>
 
 <section class="main">
     <section class="main-banner" style="background-image: url('img/homebanner.jpg');">
@@ -139,48 +75,6 @@
     </section>
 </section>
 
-<footer>
-    <div class="footer-inner">
-        <div class="footer-widgets">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="widget">
-                            <h3 class="widget-title">Artículos más recientes</h3>
-                            <ul>
-                                <li><a href="#">Lorem ipsum dolor</a></li>
-                                <li><a href="#">Vestibulum auctor</a></li>
-                                <li><a href="#">Suspendisse efficitur orci</a></li>
-                                <li><a href="#">Nulla vehicula felis</a></li>
-                                <li><a href="#">Donec sagittis</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="widget">
-                            <h3 class="widget-title">Categorías</h3>
-                            <ul>
-                                <li><a href="#">Suspendisse efficitur orci</a></li>
-                                <li><a href="#">Nulla vehicula felis</a></li>
-                                <li><a href="#">Donec sagittis</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="widget">
-                            <h3 class="widget-title">Conócenos</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, atque.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="js/jquery.js"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
+<?php 
+get_footer();
+?>
