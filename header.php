@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
+<!---->
 <head>
     <meta charset= <?php bloginfo ('charset'); ?> >
     <meta name="viewport"
@@ -9,7 +9,7 @@
     <?php wp_head();?>
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>">
 </head>
-
+<!---->
 <body <?php body_class(); ?>>
     <header>
         <div class="header-inner">
@@ -21,7 +21,7 @@
             <div class="logo-container">
                 <a href="#">
                     <h1 class="d-none">LubriCentro</h1>
-                    <img src="<?php echo IMAGES ?>/lubri.png" alt="Lubricentro">
+                    <img src='<?php echo IMAGES; ?>/lubri.png' alt="Lubricentro">
                 </a>
             </div>
             <nav class="main-menu-container">

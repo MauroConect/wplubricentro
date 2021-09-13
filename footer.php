@@ -48,7 +48,14 @@
 </footer>
 
 
-<script src="wp-content/themes/lubricentro/vanilla-tilt.min.js"></script>
+
+
+<!---->
+
+<script src="wp-content/themes/lubricentro/js/main.js"></script>
+<script src="wp-content/themes/lubricentro/js/parallax.min.js"></script>
+<script src="wp-content/themes/lubricentro/js/jquery.js"></script>
+<script src="wp-content/themes/lubricentro/js/vanilla-tilt.min.js"></script>
 <script>
     VanillaTilt.init(document.querySelectorAll(".box"), {
         max: 25,
@@ -56,11 +63,6 @@
     });
 </script>
 
-<?php wp_footer(); ?>
-
-<script src="wp-content/themes/lubricentro/js/main.js"></script>
-<script src="wp-content/themes/lubricentro/js/parallax.min.js"></script>
-<script src="wp-content/themes/lubricentro/js/jquery.js"></script>
 </body>
 
 </html>

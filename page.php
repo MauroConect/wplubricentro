@@ -5,14 +5,14 @@ get_header();
 ?>
 <!--Inicio Loop de wordpress-->
 <section class="main">
-    <section class="main-banner" style="background-image: url('<?php THEMEROOT?>/homebanner.jpg');">
+    <section class="main-banner" style="background-image: url('<?php echo IMAGES; ?>/homebanner.jpg');">
         <div class="main-banner-inner">
             <div class="container">
                 <h1><?php the_title(); ?></h1>
             </div>
         </div>
-</section>
-
+    </section>
+    <!---->
     <section class="page-content page-content--page">
         <div class="container">
             <div class="row">
@@ -33,8 +33,8 @@ get_header();
             </div>
         </div>
     </section>
-    </section>
+</section>
 
-<?php 
+<?php
 get_footer();
 ?>
